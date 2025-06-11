@@ -33,8 +33,8 @@ int main() {
             break;
         }
         if (parsed[0]=="cd") {
-            const char* process=(parsed.size()>1)?(parsed[1].c_str()):(getenv("HOME"));
-            if (chdir(process)!=0) {
+            const char* dir=(parsed.size()>1)?(parsed[1].c_str()):(getenv("HOME"));
+            if (chdir(dir)!=0) {
                 perror("cd Failed");
             }
             continue;
