@@ -1,15 +1,17 @@
-## SimpleUnixShell
+# SimpleUnixShell
 
 A simple shell built in C++ as a learning project. It supports commands execution, changing directories (cd) , management of system processes using fork() and execvp(), and error handling. 
 Note:Built for the linux operating system.
 
-#Features:
+Features:
+
 Execute built-in commmands (echo,ls,mkdir,etc) .
 Execute cd to change directories.
 Command Parsing using StringStreams(sstream).
 Proper error handling.
 
-#How it works:
+How it works:
+
 -1: The main loop runs and the symbol (=>) shows up when the shell is ready to take an input.
 -2: The shell accepts a line input with whitespaces , which is then parsed using a parser function that uses the StringStream to remove the whitespaces ans store each parsed word as a separate word in a vector. 
 -3: If the first element is quit or exit. The program terminates.
@@ -23,10 +25,12 @@ Proper error handling.
 --- In case of an error the program exits returning the exit code.
 
 Learning Outcomes:
+
 -Process creation using fork() and execvp.
 -Parsing using string stream.
 -Working of C-style strings.
 -Handling built in commands like cd.
 
 Contribution:
+
 Feel free to contribute any improvements to the project. As its a learning project, feel free to fork and experiment.
