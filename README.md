@@ -7,11 +7,10 @@ Note:Built for and runs only on the linux operating system.
 
 ## Features:
 
-* Execute built-in commmands (echo,ls,mkdir,etc) .
-* Execute cd to change directories.
-* Command Parsing using
-* StringStreams(sstream).
-* Proper error handling.
+* Execute built-in commands (e.g., `echo`, `ls`, `mkdir`)
+* Built-in `cd` support
+* Command parsing using `std::stringstream`
+* Proper error handling for system calls
 
 ## How it works:
 
@@ -25,7 +24,7 @@ Note:Built for and runs only on the linux operating system.
 8. In the child, execvp() is used to process the C-style array.
 9. If the child has not executed, the parent waits for the child using wait().
 10. The program loops back.
-###
+
 In case of an error the program exits returning the exit code.
 
 ## Learning Outcomes:
