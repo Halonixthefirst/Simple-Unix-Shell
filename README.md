@@ -1,7 +1,7 @@
 
 # SimpleUnixShell
 
-A lightweight Unix shell built from scratch in C++ with native process management, command parsing, and a modular architecture—built to understand how real shells work under the hood.
+A lightweight Unix shell built from scratch in C++ with native process management, command parsing, and a modular architecture, built to understand how real shells work under the hood.
 It supports commands execution, changing directories (cd) , management of system processes using fork() and execvp(), and error handling. 
 Note:Built for and runs only on the linux operating system.
 
