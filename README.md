@@ -1,7 +1,8 @@
 
 # SimpleUnixShell
 
-A simple shell built in C++ as a learning project. It supports commands execution, changing directories (cd) , management of system processes using fork() and execvp(), and error handling. 
+A lightweight Unix shell built from scratch in C++ with native process management, command parsing, and a modular architecture—built to understand how real shells work under the hood.
+It supports commands execution, changing directories (cd) , management of system processes using fork() and execvp(), and error handling. 
 Note:Built for and runs only on the linux operating system.
 
 ## Features:
@@ -33,6 +34,12 @@ In case of an error the program exits returning the exit code.
 * Parsing using string stream.
 * Working of C-style strings.
 * Handling built in commands like cd.
+
+## Roadmap
+- [ ] Add support for piping and redirection
+- [ ] Built-in command history (up/down arrows)
+- [ ] AI-suggestions via OpenAI API
+- [ ] Tab auto-completion
 
 ## Contribution:
 
