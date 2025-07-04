@@ -29,6 +29,8 @@ int main() {
             continue;
         }
         std::vector<string>parsed=parser(command);
+        if(parsed.empty()) continue;
+        if(parsed[0].empty()) continue;
         if (parsed[0]=="quit"|| parsed[0]=="exit") {
             break;
         }
